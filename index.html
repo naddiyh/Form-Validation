@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Open+Sans:wght@300&family=Poppins:wght@300;400&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <section class="main">
+            <!-- left side -->
+            <section class="leftside">
+                <h2 class="logo">Pisocial</h2>
+                <div class="login">
+                    <div class="sublogin">
+                        <div class="icon">
+                            <div><img src="/picts/Linkedin.png" alt="linkedln"></div>
+                            <a href="https://www.linkedin.com/" target="_blank">Sign up with Linkedln</a>
+                        </div>
+                        <div class="icon">
+                            <div> <img src="./picts/twitter.png" alt="twitter"></div>
+                            <a href="https://www.twitter.com/" target="_blank">Sign up with Twitter</a>
+                        </div>
+                        <div class="icon">
+                            <div><img src="/picts/Facebook.png" alt="Facebook" ></div>
+                            <a  href="https://www.facebook.com/" target="_blank">Sign up with Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right side -->
+            <section class="rightside">
+                <div class="content">
+                    <div class="title">
+                        <h2 class="sub-title">Sign Up</h2>
+                        <p class="text">Get Started absolutely free</p>
+                    </div>
+                    <form id=form class="form">
+                            <div class="sub-Form">
+                                <label for="username">Name</label>
+                                <input class="input" id="username" type="text" placeholder="Username"/>
+                                <small>Error message</small>
+                            </div>
+                            <div class="sub-Form"> 
+                                <label for="email">Email</label>
+                                <input class="input" id="email" type="email" placeholder="Email"/>
+                                <small>Error message</small>
+                            </div>
+                            <div class="sub-Form"> 
+                                <label for="password">Password</label>
+                                <input class="input" id="password" type="password" placeholder="Password"/>
+                                <small>Error message</small>
+                            </div>                 
+                            <div class="click">
+                                <button id="submit" type="submit">Sign up</button>
+                            </div>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

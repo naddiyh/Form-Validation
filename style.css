@@ -1,0 +1,248 @@
+:root{
+    --primary-color :#77a8e09f;
+    --secondary-color: #03A9F4;
+    --red-color :#FF0000;
+    --green-color :#20c120;
+    --white-color: #fff;
+}
+
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.container{
+    display: flex;
+    width:100vw;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    width: 65rem;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; 
+    background-image: url(/picts/Sign\ Up\ Page.png);
+    background-size: cover;
+    box-shadow: 0px 9px 20px 15px rgba(0,0,0,0.1);
+}
+
+.leftside{
+    display: flex;
+    padding: 2rem;
+    width: 40rem;
+    height: 40rem;
+    flex-direction: column;
+    gap: 1.5rem;  
+}
+
+.leftside .logo{
+    color: var(--white-color);
+    font-size: 25pt;
+    letter-spacing: 0.1rem;
+    font-family: 'Freehand', cursive;
+}
+
+.login{
+    display: flex;
+    width: 25rem;
+    height: 40rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.sublogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    gap:2rem;
+}
+
+.sublogin img{
+    width: 25px;
+    height: 25px;
+}
+
+.icon{
+    display: flex;
+    gap: 0.5rem;
+    height: 1.9rem;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+    border-radius: 0.5rem;
+    background: var(--white-color);
+    font-size: 9.5pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.icon:hover {
+    background-color: #90dcfa96;
+    color: var(--white-color);
+}
+
+.icon:hover a{
+    color: var(--white-color);
+}
+
+.icon a{
+    text-decoration: none;
+    color: #4F4F4F;
+ 
+}
+
+.rightside{
+    display: flex;
+    padding: 1.5rem;
+    width: 40rem;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    width: 25rem;
+    height: 35rem;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    gap:0.2rem;
+ 
+}
+
+.title{
+    font-size: 18pt;
+    line-height: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.sub-title{
+    color: #0280ba;
+    letter-spacing: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 5rem;
+}
+
+.text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    color:#4F4F4F;
+}
+
+.form{
+    padding-bottom: 2rem;  
+    height: 25rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sub-Form{
+    width: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: 4rem;
+    /* position: relative; */
+}
+
+.sub-Form label{
+    font-size: 8pt;
+    padding: 0.2rem;
+    color: var(--secondary-color);
+    font-family: poppins,cursive;
+    font-weight: 400;
+}
+
+.sub-Form input:focus{
+    outline: 0;
+    border :1.5px solid var(--secondary-color);
+}
+
+.sub-Form.success input{
+    border : 1.5px solid var(--green-color);
+}
+
+.sub-Form.error input{
+    border : 1.5px solid var(--red-color);
+}
+
+.sub-Form small{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    color: var(--red-color);
+    font-size: 8pt;
+    font-family: Roboto, cursive;
+    font-weight: 300;
+    visibility: hidden;   
+}
+
+.sub-Form.error small{
+    visibility: visible;
+} 
+
+.input{
+    width: 18rem;
+    height: 1.9rem;
+    border-radius: 8px;
+    padding-left: 0.5rem;
+    border: 1px solid;
+    font-size: 7pt;
+    border-color: #c3c1c1;
+}
+
+form input::placeholder{
+    color: #d7d7d7;
+    letter-spacing: 0.7px;
+}
+
+
+.form input[type="checkbox"]{
+    width: 0.5rem;
+    cursor: pointer;
+}
+
+.click{
+    padding-top: 1.5rem;
+}
+
+button{
+    cursor: pointer;
+    border: 0;
+    width: 18rem;
+    border-radius: 10px;
+    height: 1.8rem;
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+button:hover{
+    background: #3cc2f7e9;
+}
+
+
+
+
