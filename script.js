@@ -3,7 +3,6 @@ const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const terms = document.getElementById('terms');
 
 // Function to Check Error
 function showError(input, message) {
@@ -17,7 +16,6 @@ function showError(input, message) {
 function showSuccess(input) {
     const subForm = input.parentElement;
     subForm.className = 'sub-Form success';
-  
 }
 
 // Check if Email is Valid (regex)
@@ -37,7 +35,6 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     checkingForm();
 });
-
 
 //Function to check all of input
 function checkingForm() {
